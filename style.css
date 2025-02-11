@@ -10,6 +10,8 @@ html {
 }
 
 body {
+    background-color: #24292F;
+    color: #FFFFFF;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
 }
@@ -26,8 +28,13 @@ details[open] {
     height: 50vh;
 }
 
-details details {
+details details, 
+details p {
     margin-inline-start: 1rem;
+}
+
+summary {
+    font-size: 1.5rem;
 }
 
 iframe {
