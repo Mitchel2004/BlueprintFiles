@@ -23,13 +23,16 @@ main {
 h1 {
 	font-size: 2rem;
 }
+h2 {
+    font-size: 1.25rem;
+}
 
 details[open] {
     height: 50vh;
 }
 
 details details, 
-details p {
+details h2, details figure {
     margin-inline-start: 1rem;
 }
 
@@ -42,5 +45,10 @@ iframe {
     margin: -8px;
     margin-inline-start: calc(1rem - 8px);
     width: 100%;
+    height: 96%;
+}
+
+figure {
+    overflow: scroll;
     height: 96%;
 }
