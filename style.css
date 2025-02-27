@@ -23,32 +23,37 @@ main {
 h1 {
 	font-size: 2rem;
 }
+
 h2 {
     font-size: 1.25rem;
 }
 
-details[open] {
-    height: 50vh;
+details {
+    border-block-start: 1px solid #000000;
 }
 
 details details, 
-details h2, details figure {
+details div {
     margin-inline-start: 1rem;
+}
+
+details details + div, 
+details div + div {
+    margin-block-start: 1rem;
+}
+
+details iframe {
+    border: none;
+    margin: -8px;
+    width: calc(100% + 16px);
+    height: 651px;
+}
+
+details figure {
+    overflow: scroll;
+    max-height: 651px;
 }
 
 summary {
     font-size: 1.5rem;
-}
-
-iframe {
-    border: none;
-    margin: -8px;
-    margin-inline-start: calc(1rem - 8px);
-    width: 100%;
-    height: 96%;
-}
-
-figure {
-    overflow: scroll;
-    height: 96%;
 }
